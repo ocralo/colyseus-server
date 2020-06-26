@@ -1,0 +1,26 @@
+{
+  "name": "colyseus-server",
+  "version": "1.0.0",
+  "description": "servidor multijugador creado con colyseus",
+  "main": "server/index.js",
+  "scripts": {
+    "schema-codegen": "schema-codegen DemoRoom.ts --csharp --output ../Assets/",
+    "start": "nodemon --watch '**.ts' --exec ts-node ./Server/index.ts"
+  },
+  "author": "Rodrigo Escobar",
+  "license": "MIT",
+  "dependencies": {
+    "@colyseus/social": "^0.11.6",
+    "colyseus": "^0.13.7",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.3",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.14",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2"
+  }
+}
